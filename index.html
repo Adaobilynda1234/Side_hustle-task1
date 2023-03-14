@@ -9,45 +9,53 @@
   </head>
   <body>
     <!--CREATION OF A FORM-->
-    <h1>PERSONAL FORM</h1>
     <form onsubmit="myfunction()">
-      <label for="name">Name:</label>
-      <input
-        type="text"
-        required
-        name="fullname"
-        placeholder="Enter your full name"
-        id="fullname"
-      /><br />
-      <label for="email">Email:</label>
-      <input
-        type="email"
-        required
-        name="email"
-        placeholder="Enter your email address"
-        id="email"
-      /><br />
-      <label for="phone">Phone:</label>
-      <input
-        type="tel"
-        required
-        name="Phone"
-        placeholder="Enter your phone number"
-        id="Phone"
-      /><br />
-      <label for="gender">Gender:</label><br />
-      <input type="radio" id="gender" name="gender" value="male" required />Male
-      <input type="radio" id="gender" name="gender" value="female" />Female
-      <br />
-      <label for="Password">Password:</label>
-      <input
-        type="password"
-        required
-        name="password"
-        placeholder="Enter your Password"
-        id="password"
-      /><br />
-      <input type="submit" value="Submit" />
+      <fieldset>
+        <legend>Simple form</legend>
+        <label for="name">Name:</label><br />
+        <input
+          type="text"
+          required
+          name="fullname"
+          placeholder="Enter your full name"
+          id="fullname"
+        /><br />
+        <label for="email">Email:</label><br />
+        <input
+          type="email"
+          required
+          name="email"
+          placeholder="Enter your email address"
+          id="email"
+        /><br />
+        <label for="phone">Phone:</label><br />
+        <input
+          type="tel"
+          required
+          name="Phone"
+          placeholder="Enter your phone number"
+          id="Phone"
+        /><br />
+        <label for="gender">Gender:</label><br />
+        <input
+          type="radio"
+          id="gender"
+          name="gender"
+          value="male"
+          required
+        />Male
+        <input type="radio" id="gender" name="gender" value="female" />Female
+        <br />
+        <label for="Password">Password:</label><br />
+        <input
+          type="password"
+          required
+          name="password"
+          placeholder="Enter your Password"
+          id="password"
+        /><br />
+        <input type="submit" value="Submit" />
+      </fieldset>
     </form>
     <!--Javascript code for alert on submission-->
     <script>
